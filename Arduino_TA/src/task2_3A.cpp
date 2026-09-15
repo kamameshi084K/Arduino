@@ -1,4 +1,4 @@
-// list 2-1
+// list 2-3
 // ボード外SOS点灯
 // 2026.09.08 K.Ohashi
 #include <Arduino.h>

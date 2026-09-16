@@ -1,9 +1,12 @@
-// list 2-4
-// Blink extrenal two leds (日本語: 外付けLED2個を点滅させる)
-// led1 is positive-logic, led2 is negative logic(日本語: led1は正論理、led2は負論理)
-// 2026.09.09 K.Ohashi
-#include <Arduino.h>
+## 課題 2-4: 2つのLEDを交互に点滅させる
 
+### 1. 回路仕様
+* **配線:** Arduino UNO ボードの 10番、9番ピンに外付けLEDを接続（抵抗は 220Ω を使用）
+
+![課題2-5A回路図](fig/circuit_2_4A.png)
+
+### 2. 実装コード
+```cpp
 
 int LED_PIN = 10; // ボード内 LED ピンの番号をグローバル変数で定義
 int LED_PIN2 = 9; // ボード内 LED ピンの番号をグローバル変数で定義
@@ -47,3 +50,8 @@ void loop() // 無限に繰り返されるメイン処理
     // 3回繰り返した後、次の点滅までの間隔を空ける
     delay(TimeInterval);
 }
+```
+
+### 3. 解説
+
+* **負論理:** LED2のアノードは常時5Vに接続されているため、D9ピンがLOW（0V）になった瞬間のみ電位差（5V - 0V = 5V）が生じて点灯する。

@@ -7,7 +7,7 @@
 
 
 int LED_PIN = 10; // ボード内 LED ピンの番号をグローバル変数で定義
-int SW_PIN  = 11; // ボード内 LED ピンの番号をグローバル変数で定義
+int SW_PIN  = 11; // 外部スイッチのピン番号をグローバル変数で定義
 
 int ledState = LOW; // LEDの状態を保持する変数（初期値は消灯）
 int LastButtonState = HIGH;    // スイッチの状態を保持する変数

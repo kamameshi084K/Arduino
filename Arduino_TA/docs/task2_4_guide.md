@@ -5,6 +5,8 @@
 
 ![課題2-5A回路図](fig/circuit_2_4A.png)
 
+<div style="break-before: page;"></div>
+
 ### 2. 実装コード
 ```cpp
 
